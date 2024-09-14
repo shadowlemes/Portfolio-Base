@@ -26,7 +26,7 @@ namespace MainMenu
         {
             while (true)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("╔════════════════════╗");
             Console.WriteLine("║     Portfólio      ║");
             Console.WriteLine("╚════════════════════╝\n");
