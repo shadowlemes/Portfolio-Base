@@ -1,14 +1,10 @@
 ﻿using System;
-using System.ComponentModel.Design;
 using MainMenu;
 
 namespace JogoAdivinhacao
 {
     public class Program
-    {
-        static int vidas = 3;
-        static Random aleatorio = new Random();
-        
+    {        
         public static void MenuJogo()
         {
             Jogo();
@@ -26,10 +22,13 @@ namespace JogoAdivinhacao
 
         public static void Jogo()
         {
-            int numeroAleatorio = aleatorio.Next(1, 11);
-
+            int vidas = 3;
+            Random aleatorio = new Random();
             while (true)
-            {
+            {                   
+
+                int numeroAleatorio = aleatorio.Next(1, 11);
+
                 Console.WriteLine($"Vidas {vidas}\nAdivinhe o número aleatório:\n");
                 try
                 {

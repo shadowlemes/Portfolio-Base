@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MainMenu;
 
 namespace CronometroOpcao
 {
-    public class Cronometro
+    public class Program
     {
         public static void Inicio()
         {

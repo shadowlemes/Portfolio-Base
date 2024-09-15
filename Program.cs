@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Threading;
-using System.Threading.Channels;
 using JogoAdivinhacao;
 using CronometroOpcao;
+using JogoForca;
 
 namespace MainMenu
 {
@@ -58,9 +57,11 @@ namespace MainMenu
 
                         case 2:
                             Transicao();
-                            Cronometro.Inicio();
+                            CronometroOpcao.Program.Inicio();
                             break;
-                        case 3: Console.WriteLine("Em construção"); break;
+                        case 3: Transicao();
+                            JogoForca.Program.Inicio();
+                            break;
                         case 4: Console.WriteLine("Em construção"); break;
                         case 5: Console.WriteLine("Em construção"); break;
                         default: Console.WriteLine("Insira uma opção válida"); break;

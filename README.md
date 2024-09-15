@@ -60,11 +60,6 @@ Uma aplicação para converter temperaturas entre diferentes unidades, também em d
 Como Executar o Projeto
 Clone o repositório:
 
-bash
-Copiar código
-git clone https://github.com/seu-usuario/seu-repositorio.git
-Abra o projeto no Visual Studio ou no seu editor C# preferido.
-
 Execute a aplicação:
 
 Compile e execute o programa.
