@@ -28,7 +28,7 @@ namespace JogoForca
                 for (int i = 0; i < letrasIdentificadas.Length; i++)
                 {
                     string letraAtual = letrasIdentificadas[i];
-                    if (letraAtual[i] == null)
+                    if (letrasIdentificadas[i] == null)
                     {
                         Console.Write("-");
                     }
@@ -56,7 +56,7 @@ namespace JogoForca
                 for (int i = 0; i < letrasIdentificadas.Length; i++)
                 {
                     string letraAtual = letrasIdentificadas[i];
-                    if (letraAtual[i] == null)
+                    if (letrasIdentificadas[i] == null)
                     {
                         todasLetrasIdentificadas = false;
                     }
