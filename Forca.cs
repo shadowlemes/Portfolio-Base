@@ -1,15 +1,11 @@
-﻿using System;
-using System.Threading.Channels;
-using MainMenu;
-
-namespace JogoForca
+﻿namespace JogoForca
 {
     public static class Program
     {
         public static void Inicio()
         {
-            Console.WriteLine("JOGO DA FORCA");
-            Console.WriteLine("Jogador 1\nDigita a palavra e pressiona ENTER\n");
+            Console.WriteLine("JOGO DA FORCA\n");
+            Console.WriteLine("Vez do jogador 1\nDigita a palavra e pressiona ENTER:\n");
             string palavraEscolhida = Console.ReadLine();
             string[] letrasIdentificadas = new string[palavraEscolhida.Length];
             int tamanhoPalavraEscolhida = palavraEscolhida.Length;
@@ -52,22 +48,26 @@ namespace JogoForca
                         letrasIdentificadas[i] = letraAtual;
                     }
                 }
-                bool todasLetrasIdentificadas = true;
+                bool todasLetrasIdentificadas = true;             
                 for (int i = 0; i < letrasIdentificadas.Length; i++)
                 {
-                    string letraAtual = letrasIdentificadas[i];
+                   string letraAtual = letrasIdentificadas[i];
                     if (letrasIdentificadas[i] == null)
-                    {
+                    {                       
                         todasLetrasIdentificadas = false;
                     }
                 }
                 if (todasLetrasIdentificadas)
                 {
-                    jogoEmAndamento = false;
+                    Console.Clear();
+                    Console.WriteLine(palavraEscolhida.ToUpper()) ;
+                    Thread.Sleep(2000);
+                    Console.WriteLine("Parabéns, você conseguiu!");
+                    jogoEmAndamento = false;                    
                 };
 
             }
-            while (jogoEmAndamento); 
+            while (jogoEmAndamento);
 
             Console.WriteLine("Pressiona qualquer tecla para encerrar o jogo");
             Console.ReadKey();
