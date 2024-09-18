@@ -9,7 +9,8 @@
             string palavraEscolhida = Console.ReadLine();
             string[] letrasIdentificadas = new string[palavraEscolhida.Length];
             int tamanhoPalavraEscolhida = palavraEscolhida.Length;
-
+            int vidas = palavraEscolhida.Length;
+            bool letraEncontrada = false;
 
             Console.Clear();
             bool jogoEmAndamento = true;
@@ -36,7 +37,7 @@
 
                 Console.WriteLine();
 
-                Console.WriteLine("Digite a letra para tentar adivinhar a palavra");
+                Console.WriteLine($"Você tem {vidas} vidas\nDigite a letra para tentar adivinhar a palavra");
                 Console.WriteLine("A letra escolhida é: ");
                 string letraEscolhida = Console.ReadLine();
 
@@ -46,6 +47,11 @@
                     if (letraAtual == letraEscolhida)
                     {
                         letrasIdentificadas[i] = letraAtual;
+                        letraEncontrada = true;
+                    }
+                    if (!letraEncontrada)
+                    {
+                        vidas--;
                     }
                 }
                 bool todasLetrasIdentificadas = true;             
