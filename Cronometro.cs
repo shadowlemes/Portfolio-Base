@@ -7,7 +7,7 @@ namespace CronometroOpcao
     {
         public static void Inicio()
         {
-            Console.WriteLine("Insira o valor para Cronometrar: ");
+            Console.WriteLine("Insira o valor para início da contagem regressiva: ");
 
             try
             {

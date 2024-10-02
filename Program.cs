@@ -39,10 +39,11 @@ namespace MainMenu
         {
    
             Console.WriteLine("1 - Jogo Adivinhação");
-            Console.WriteLine("2 - Cronômetro");
+            Console.WriteLine("2 - Contagem regressiva");
             Console.WriteLine("3 - Forca");
             Console.WriteLine("4 - ToDo Lista");
-            Console.WriteLine("5 - Conversor de Temperatura");
+            Console.WriteLine("5 - Conversor de Temperatura\n");
+            Console.WriteLine("0 - Sair");
 
                 try
                 {
@@ -50,11 +51,11 @@ namespace MainMenu
 
                     switch (escolha)
                     {
+                        case 0: Environment.Exit(0); break;
                         case 1:
                             Transicao();
                             JogoAdivinhacao.Program.MenuJogo();
                             break;
-
                         case 2:
                             Transicao();
                             CronometroOpcao.Program.Inicio();
