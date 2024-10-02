@@ -43,6 +43,7 @@ namespace MainMenu
             Console.WriteLine("3 - Forca");
             Console.WriteLine("4 - ToDo Lista");
             Console.WriteLine("5 - Conversor de Temperatura");
+            Console.WriteLine("0 - Sair");
 
                 try
                 {
